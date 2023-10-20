@@ -4,3 +4,58 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* General Classes */
+ul {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.button {
+    border: none;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-weight: 600;
+}
+
+/* Header */
+header {
+    background-color: rgb(0, 132, 253);
+    color: white;
+}
+
+header .container {
+    justify-content:space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+header .container .logo img {
+    height: 100%;
+}
+
+header .container .desktop-nav {
+    display: none;
+}
+
+header .container .desktop-nav ul {
+    height: 100%;
+    align-items: center;
+}
+
+header .container .desktop-nav ul li {
+    margin-right: 1rem;
+}
+
+header .container .mobile-nav {
+    height: 100%;
+    align-items: center;
+}
