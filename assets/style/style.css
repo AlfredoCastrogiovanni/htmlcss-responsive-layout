@@ -38,6 +38,11 @@ ul {
     color: white;
 }
 
+.button-purple {
+    background-color: rgb(151, 146, 228);
+    color: white;
+}
+
 /* Header */
 header {
     background-color: rgb(0, 132, 253);
@@ -271,5 +276,57 @@ header .wrapper .mobile-nav {
 #testimonials .wrapper .card .left-column .img-wrapper.card3 {
     background-image: url("../img/testimonial3.jpg");
 }
+
+/* Benefits */
+#benefits {
+    margin-top: 3rem;
+    background-color: rgb(151, 146, 228);
+}
+
+#benefits h1 {
+    padding: 2rem 0;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+
+#benefits .card-wrapper {
+    flex-direction: column;
+}
+
+#benefits .card-wrapper .card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 25px;
+    margin-bottom: 2rem;
+}
+
+#benefits .card-wrapper .card p:first-of-type {
+    font-size: 50px;
+    padding-bottom: 1rem;
+}
+
+#benefits .card-wrapper .card h2 {
+    font-size: 25px;
+    padding-bottom: 1rem;
+}
+
+#benefits .card-wrapper .card p:last-of-type {
+    padding-bottom: 2rem;
+    color: grey;
+}
+
+#benefits .card-wrapper .card button {
+    font-size: 20px;
+    padding: 0.75rem 3.5rem;
+}
+
+#benefits .card-wrapper .card p:first-of-type,
+#benefits .card-wrapper .card h2 {
+    color: rgb(151, 146, 228);
+    font-weight: 600;
+}
+
+
 
 
