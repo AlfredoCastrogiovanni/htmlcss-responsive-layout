@@ -66,6 +66,7 @@ header .wrapper {
 
 header .wrapper .logo img {
     height: 100%;
+    vertical-align: middle;
 }
 
 header .wrapper .desktop-nav {
@@ -166,10 +167,6 @@ header .wrapper .mobile-nav {
     padding: 2rem 0;
 }
 
-#planning .wrapper img {
-    width: 100%;
-}
-
 #planning .wrapper .left-column {
     color: white;
     margin-bottom: 2rem;
@@ -180,18 +177,18 @@ header .wrapper .mobile-nav {
     padding: 2rem 0;
 }
 
-#planning .wrapper .right-column {
+#planning .wrapper .right-column .wrapper {
     background-color: white;
     border-radius: 25px;
     padding: 1rem;
     text-align: center;
 }
 
-#planning .wrapper .right-column h1 {
+#planning .wrapper .right-column .wrapper h1 {
     padding: 2rem 0;
 }
 
-#planning .wrapper .right-column p {
+#planning .wrapper .right-column .wrapper p {
     padding-bottom: 2rem;
 }
 
@@ -206,6 +203,11 @@ header .wrapper .mobile-nav {
 
 #planning .wrapper .left-column,
 #planning .wrapper .right-column {
+    width: 100%;
+}
+
+#planning .wrapper .left-column img,
+#planning .wrapper .right-column img {
     width: 100%;
 }
 
@@ -261,6 +263,7 @@ header .wrapper .mobile-nav {
 #testimonials .wrapper .card .right-column {
     color: white;
     text-align: center;
+    flex-direction: column;
 }
 
 #testimonials .wrapper .card .right-column p:first-of-type {
@@ -477,6 +480,8 @@ footer .bottom-footer p:first-of-type {
         width: 30%;
         align-self: center;
         margin: 0;
+        text-align: start;
+        padding-left: 1rem;
     }
 
     #testimonials .wrapper .card .left-column .img-wrapper {
@@ -486,6 +491,8 @@ footer .bottom-footer p:first-of-type {
 
     #testimonials .wrapper .card .right-column {
         width: 70%;
+        text-align: start;
+        padding-left: 1rem;
     }
 
     #benefits .card-wrapper {
@@ -503,7 +510,7 @@ footer .bottom-footer p:first-of-type {
         flex-direction: row;
         justify-content: center;
     }
-    
+
     #about-us .wrapper .right-column {
         text-align: center;
     }
@@ -513,8 +520,121 @@ footer .bottom-footer p:first-of-type {
     width: calc(50% - 1rem);
     margin-right: 1rem;
     }
+}
 
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1100px;
+    }
+
+    header .wrapper .desktop-nav {
+        display: block;
+    }
+
+    header .wrapper .mobile-nav {
+        display: none;
+    }
+
+    #hero .main-card {
+        flex-direction: row;
+    }
+
+    #hero .main-card .left-column {
+        text-align: start;
+        padding-top: 1rem;
+    }
+
+    #hero .main-card .left-column h1 {
+        font-size: 20px;
+    }
+
+    #hero .main-card .right-column {
+        margin: 0 2rem;
+    }
+
+    #hero .main-card .left-column,
+    #hero .main-card .right-column {
+        width: 50%;
+    }
+
+    #planning .wrapper {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #planning .wrapper .left-column {
+        margin-bottom: 0;
+    }
+
+    #planning .wrapper .left-column img {
+        margin-bottom: 4rem;
+    }
+
+    #planning .wrapper .left-column h1 {
+        padding: 3rem 0;
+    }
+
+    #planning .wrapper .right-column .wrapper {
+        height: 70%;
+        align-self: flex-end;
+    }
+
+    #planning .wrapper .right-column .wrapper img {
+        height: 50%;
+        width: unset;
+    }
+
+    #planning .wrapper .right-column .wrapper p {
+        padding: 2rem;
+    }
+
+    #planning .wrapper .left-column,
+    #planning .wrapper .right-column {
+        width: calc(50% - 2rem);
+        margin-right: 2rem;
+    }
+
+    #testimonials .wrapper .card .left-column {
+        width: 20%;
+    }
+
+    #testimonials .wrapper .card .left-column .img-wrapper {
+        height: 200px;
+        width: 200px;
+    }
+
+    #testimonials .wrapper .card .right-column {
+        width: 80%;
+        justify-content: center;
+        padding-left: 3rem;
+    }
+
+    #benefits .card-wrapper .card {
+        width: calc(100% / 3 - 1rem);
+    }
+
+    #about-us .wrapper .left-column {
+        width: calc(70% - 2rem);
+        margin-right: 2rem;
+    }
     
+    #about-us .wrapper .right-column {
+        width: 30%;
+        text-align: start;
+    }
+
+    #about-us .wrapper .right-column .img-wrapper {
+        width: 200px;
+        height: 200px;
+    }
+    #about-us .wrapper .right-column p {
+        font-size: 25px;
+    }
+
+    #about-us .wrapper .right-column button {
+        padding: 1rem 2rem;
+        font-size: 15px;
+    }
 }
 
 
