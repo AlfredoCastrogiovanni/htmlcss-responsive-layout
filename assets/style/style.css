@@ -1,3 +1,6 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800&display=swap');
+
 /* Reset */
 * {
     margin: 0;
@@ -6,10 +9,14 @@
 }
 
 body {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* General Classes */
+.container {
+    width: 500px;
+    margin: 0 auto;
+}
 ul {
     list-style: none;
 }
@@ -26,36 +33,108 @@ ul {
     font-weight: 600;
 }
 
+.button-blue {
+    background-color: rgb(0, 132, 253);
+    color: white;
+}
+
 /* Header */
 header {
     background-color: rgb(0, 132, 253);
     color: white;
 }
 
-header .container {
+header .wrapper {
     justify-content:space-between;
     align-items: center;
     padding: 1rem;
 }
 
-header .container .logo img {
+header .wrapper .logo img {
     height: 100%;
 }
 
-header .container .desktop-nav {
+header .wrapper .desktop-nav {
     display: none;
 }
 
-header .container .desktop-nav ul {
+header .wrapper .desktop-nav ul {
     height: 100%;
     align-items: center;
 }
 
-header .container .desktop-nav ul li {
+header .wrapper .desktop-nav ul li {
     margin-right: 1rem;
 }
 
-header .container .mobile-nav {
+header .wrapper .mobile-nav {
     height: 100%;
     align-items: center;
 }
+
+/* Hero */
+#hero {
+    margin-top: 3rem;
+}
+
+#hero .main-card .left-column,
+#hero .main-card .right-column {
+    width: 100%;
+}
+
+#hero .card {
+    background-color: rgb(181, 221, 255);
+    border-radius: 25px;
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+#hero .card i {
+    font-size: 80px;
+}
+
+#hero .card h1 {
+    font-size: 30px;
+}
+
+#hero .card p {
+    color: rgb(86, 105, 121);
+    font-weight: 500;
+}
+
+#hero .card i,
+#hero .card h1 {
+    color: rgb(0, 132, 253);
+    padding-bottom: 1rem;
+}
+
+#hero .main-card {
+    flex-direction: column;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+#hero .main-card .left-column p {
+    margin-bottom: 1rem;
+}
+
+#hero .main-card .left-column i {
+    font-size: 20px;
+    color: white;
+    padding: 0;
+    vertical-align: text-top;
+}
+
+#hero .main-card .left-column button {
+    font-size: 20px;
+    padding: 0.75rem 3.5rem;
+}
+
+#hero .main-card .right-column img {
+    width: 100%;
+    position: relative;
+    top: 7px;
+}
+
+
