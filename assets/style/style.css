@@ -327,6 +327,62 @@ header .wrapper .mobile-nav {
     font-weight: 600;
 }
 
+/* About Us */
+#about-us {
+    margin-top: 3rem;
+}
+
+#about-us .wrapper .left-column {
+    margin-bottom: 2rem;
+}
+
+#about-us .wrapper .left-column h1 {
+    font-size: 40px;
+    color: rgb(151, 146, 228);
+    padding-bottom: 1rem;
+}
+
+#about-us .wrapper .left-column p {
+    font-size: 20px;
+}
+
+#about-us .wrapper .right-column .img-wrapper {
+    background-image: url(../img/about.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    display: inline-block;
+    position: relative;
+}
+
+#about-us .wrapper .right-column .img-wrapper i {
+    color: rgb(151, 146, 228);
+    font-size: 90px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#about-us .wrapper .right-column p {
+    font-size: 35px;
+    color: rgb(151, 146, 228);
+    font-weight: 600;
+    padding: 2rem 0;
+}
+
+#about-us .wrapper .right-column button {
+    font-size: 20px;
+    padding: 0.75rem 3.5rem;
+}
+
+#about-us .wrapper .left-column,
+#about-us .wrapper .right-column {
+    width: 100%;
+}
+
+
 
 
 
