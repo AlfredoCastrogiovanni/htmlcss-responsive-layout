@@ -15,7 +15,7 @@ body {
 /* General Classes */
 .container {
     width: 100%;
-    margin: 0 auto;
+    padding: 0 1rem;
 }
 ul {
     list-style: none;
@@ -458,6 +458,7 @@ footer .bottom-footer p:first-of-type {
 @media screen and (min-width: 768px) {
     .container {
         width: 700px;
+        margin: 0 auto;
     }
 
     #hero .card {
