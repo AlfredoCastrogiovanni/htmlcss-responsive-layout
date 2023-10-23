@@ -14,7 +14,7 @@ body {
 
 /* General Classes */
 .container {
-    width: 500px;
+    width: 100%;
     margin: 0 auto;
 }
 ul {
@@ -255,8 +255,8 @@ header .wrapper .mobile-nav {
     background-size: cover;
     background-position: center;
     border-radius: 50%;
-    height: 400px;
-    width: 400px;
+    height: 250px;
+    width: 250px;
     display: inline-block;
 }
 
@@ -525,7 +525,7 @@ footer .bottom-footer p:first-of-type {
 
 @media screen and (min-width: 1200px) {
     .container {
-        width: 1100px;
+        width: 1200px;
     }
 
     header .wrapper .desktop-nav {
@@ -635,6 +635,12 @@ footer .bottom-footer p:first-of-type {
     #about-us .wrapper .right-column button {
         padding: 1rem 2rem;
         font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .container {
+        width: 1400px;
     }
 }
 
